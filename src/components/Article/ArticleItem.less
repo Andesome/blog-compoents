@@ -1,0 +1,26 @@
+.article-item{
+  padding: 8px 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+  &.full{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color:#fff;
+    box-sizing: border-box;
+    animation: borderChange 1s ease;
+  }
+}
+
+@keyframes borderChange{
+  from {
+    border-radius: 50%;
+  }
+  to {
+    border-radius: 0;
+  }
+}
